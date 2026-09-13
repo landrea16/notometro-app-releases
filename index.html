@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notometro - Scarica l'app</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #08090B;
+    --panel: #16181B;
+    --line: #2B2D30;
+    --amber: #FFB000;
+    --paper: #EDEAE1;
+    --muted: #8B8D91;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--paper);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .card {
+    width: 100%;
+    max-width: 420px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 32px 28px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 22px;
+    margin: 0 0 8px;
+    letter-spacing: 0.02em;
+  }
+  .amber { color: var(--amber); }
+  p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 24px;
+  }
+  .download-button {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 20px;
+    background: var(--amber);
+    color: #16181B;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  .steps {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    text-align: left;
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  .steps ol { margin: 8px 0 0; padding-left: 20px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>Note<span class="amber">metro</span></h1>
+    <p>App ufficiale per il modulo OBD Notometro.</p>
+    <!--
+      URL da sostituire con quello reale della Release pubblicata sul repository
+      pubblico dedicato (vedi il piano "QR di installazione + auto-aggiornamento
+      app con rollout per matricola") - lo stesso nome file va usato ad ogni
+      release così questo link resta sempre valido:
+      https://github.com/<owner>/<repo>/releases/latest/download/notometro-cliente.apk
+    -->
+    <a class="download-button" href="SOSTITUIRE_CON_URL_RELEASE_APK">Scarica l'app</a>
+    <div class="steps">
+      Dopo aver toccato "Scarica":
+      <ol>
+        <li>Apri il file scaricato dalle notifiche o dalla cartella Download.</li>
+        <li>Se richiesto, consenti l'installazione da questa fonte (solo la prima volta).</li>
+        <li>Tocca "Installa".</li>
+      </ol>
+    </div>
+  </div>
+</body>
+</html>
